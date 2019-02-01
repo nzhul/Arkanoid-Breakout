@@ -411,6 +411,61 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.6, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &891190701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891190702}
+  - component: {fileID: 891190703}
+  m_Layer: 0
+  m_Name: BricksManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891190702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891190701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2142682011}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891190703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891190701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4b4453e449af848b3ff3048bfaf4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickPrefab: {fileID: 1140971456680806376, guid: df789465b84759b46beb3cda74f5761d,
+    type: 3}
+  Sprites:
+  - {fileID: 21300000, guid: a5287dd5daa065844aceaf3c92263b23, type: 3}
+  - {fileID: 21300000, guid: d3255746566ef164e890be3558659a47, type: 3}
+  - {fileID: 21300000, guid: c2aef9f7b79b3ac4a86217511a09f205, type: 3}
+  BrickColors:
+  - {r: 0.22745098, g: 0.43529412, b: 0.67058825, a: 1}
+  - {r: 1, g: 0.98475426, b: 0, a: 1}
+  - {r: 1, g: 0.5486495, b: 0, a: 1}
+  - {r: 0.7735849, g: 0.15101741, b: 0.0693307, a: 1}
+  CurrentLevel: 2
 --- !u!1 &1339301483
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +518,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1356780353
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6d6e261d56f963b4297e84f9c47a206b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -678,7 +733,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1191649611
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c2680a3e9c4ba6e4c8b6c895a3473f5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -772,6 +827,7 @@ Transform:
   m_Children:
   - {fileID: 1710881557}
   - {fileID: 689098145}
+  - {fileID: 891190702}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
