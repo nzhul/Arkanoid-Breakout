@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 503816297}
   m_Layer: 0
   m_Name: DeathWall
-  m_TagString: Untagged
+  m_TagString: DeathWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,6 +1090,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904529547}
   m_CullTransparentMesh: 0
+--- !u!1 &944794241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 944794242}
+  - component: {fileID: 944794243}
+  m_Layer: 0
+  m_Name: CollectablesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &944794242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944794241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2142682011}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &944794243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944794241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49260db243565be4ea93c41d9fccd02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvailableBuffs:
+  - {fileID: 2578080099748752187, guid: 58500be4da2858142853553d19f70690, type: 3}
+  - {fileID: 5671577457984425633, guid: b4403217f0cb4c5489fc8d75ebff6c67, type: 3}
+  - {fileID: 1736433711464803264, guid: 847273bfc5a805343aa00bef775e72dd, type: 3}
+  AvailableDebuffs:
+  - {fileID: 3207338454365239570, guid: d6c7fb30d3959ee4694f61622322e2ee, type: 3}
+  BuffChance: 10
+  DebuffChance: 6
 --- !u!1 &1150289456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1862,7 @@ GameObject:
   - component: {fileID: 1894552612}
   m_Layer: 0
   m_Name: Paddle
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1916,6 +1967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f5c083e9a20e54ea417006b753da58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extendShrinkDuration: 10
+  paddleWidth: 2
+  paddleHeight: 0.28
 --- !u!1 &1991579688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2077,7 @@ Transform:
   - {fileID: 689098145}
   - {fileID: 891190702}
   - {fileID: 1211454031}
+  - {fileID: 944794242}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
